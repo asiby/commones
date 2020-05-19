@@ -4,8 +4,8 @@
   "description": "CommonES example",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/http-server/bin/http-server --port 3000 .",
-    "serve": "./node_modules/http-server/bin/http-server --port 3000 ."
+    "start": "node index.js",
+    "serve": "node index.js"
   },
   "author": {
     "name": "Abdoulaye Siby",
@@ -15,6 +15,6 @@
   "license": "MIT",
   "dependencies": {
     "commones": "file:..",
-    "http-server": "^0.12.3"
+    "node-http-server": "^8.1.2"
   }
 }

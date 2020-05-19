@@ -1,14 +1,21 @@
-const http = require('http');
+const server=require('node-http-server');
 
-const hostname = '127.0.0.1';
-const port = 3000;
+server.deploy(
+    {
+        port: 3000,
+        root: './'
+    },
+    serverReady
+);
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
-    res.end('<h1>CommonES Example</h1>');
-});
+/*server.deploy(
+    {
+        port:8888,
+        root:'~/myOtherApp/'
+    },
+    serverReady
+);*/
 
-server.listen(port, hostname, () => {
-    console.log(`Example server running at http://${hostname}:${port}/`);
-});
+function serverReady(server){
+    console.log( `Example Server on port ${server.config.port} is now up. Check it out at http://127.0.0.1:${server.config.port}`);
+}
