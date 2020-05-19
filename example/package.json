@@ -1,0 +1,20 @@
+{
+  "name": "commones-example",
+  "version": "1.0.0",
+  "description": "CommonES example",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/http-server/bin/http-server --port 3000 .",
+    "serve": "./node_modules/http-server/bin/http-server --port 3000 ."
+  },
+  "author": {
+    "name": "Abdoulaye Siby",
+    "email": "maestro@abdoulaye.com",
+    "url": "https://abdoulaye.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commones": "file:..",
+    "http-server": "^0.12.3"
+  }
+}

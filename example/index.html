@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CommonES 1</title>
+    <script src="./node_modules/commones/src/commones.js" data-namespace=""></script>
+    <script>
+        console.log('Inline script in example1.html');
+        setTimeout(function () {
+            //console.log("Wow", typeof commonES);
+            commonES
+                .ns('_')
+                .require('./classes/Foo.js', 'Banana')
+                .ns('com_abdoulaye_playground')
+                .require('./classes/Foo.js', 'Orange')
+        }, 0)
+
+    </script>
+</head>
+<body>
+    <h1>It work!</h1>
+</body>
+</html>
