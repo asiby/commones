@@ -6,7 +6,13 @@
 
 describe("The commonES instance should exist and ", () => {
     beforeAll(async () => {
-        await page.goto("http://localhost:3000/index.html")
+        await page.goto(
+            "http://localhost:3000/index.html",
+            {
+                timeout: 10000,
+                waitUntil: ["load", "domcontentloaded", "networkidle0"]
+            }
+        )
     })
 
     test(" should have a function called .ns()", async () => {

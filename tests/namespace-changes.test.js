@@ -2,7 +2,13 @@
 
 describe("The commonES instance can set and switch namespaces ...", () => {
     beforeAll(async () => {
-        await page.goto("http://localhost:3000/index.html")
+        await page.goto(
+            "http://localhost:3000/index.html",
+            {
+                timeout: 10000,
+                waitUntil: ["load", "domcontentloaded", "networkidle0"]
+            }
+        )
     })
 
     test("Setting namespace to com.example.ns1", async () => {
