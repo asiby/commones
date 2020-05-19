@@ -2,7 +2,13 @@
   "name": "commones",
   "version": "1.0.0",
   "description": "Common ES is an ES6 Dependency Loader for ES6 capable browsers.",
-  "keywords": ["es6", "dependencies", "lazy loading", "javascript", "js"],
+  "keywords": [
+    "es6",
+    "dependencies",
+    "lazy loading",
+    "javascript",
+    "js"
+  ],
   "license": "MIT",
   "author": {
     "name": "Abdoulaye Siby",
