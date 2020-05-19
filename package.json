@@ -29,7 +29,9 @@
     ]
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build-demo": "cd ./example/ && npm install",
+    "start-demo": "cd ./example/ && npm start"
   },
   "dependencies": {},
   "devDependencies": {
