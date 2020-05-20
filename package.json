@@ -29,15 +29,17 @@
     ]
   },
   "scripts": {
-    "test": "jest",
-    "build-demo": "cd ./example/ && npm install",
-    "start-demo": "cd ./example/ && npm start"
+    "start": "cd ./example/ && npm start",
+    "test": "start-server-and-test 3000 jest",
+    "ci": "start-server-and-test 3000 jest",
+    "build-demo": "cd ./example/ && npm install"
   },
   "dependencies": {},
   "devDependencies": {
     "jest": "^26.0.1",
     "jest-cli": "^26.0.1",
     "jest-puppeteer": "^4.4.0",
-    "puppeteer": "^3.0.4"
+    "puppeteer": "^3.0.4",
+    "start-server-and-test": "^1.11.0"
   }
 }

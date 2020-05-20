@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="All Jest" type="CompoundRunConfigurationType">
+    <toRun name="start" type="js.build_tools.npm" />
+    <toRun name="All Tests" type="JavaScriptTestRunnerJest" />
+    <method v="2" />
+  </configuration>
+</component>
