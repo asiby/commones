@@ -40,7 +40,6 @@
     "jest": "^26.0.1",
     "jest-cli": "^26.0.1",
     "jest-puppeteer": "^4.4.0",
-    "node-http-server": "^8.1.2",
     "puppeteer": "^3.0.4"
   }
 }
